@@ -13,7 +13,7 @@
 // limitations under the License.
 import 'package:flutter/widgets.dart';
 
-/// A callback provided to [MenuItem] to handle menu selection.
+/// A callback provided to [MenuItem_1] to handle menu selection.
 typedef MenuSelectedCallback = void Function();
 
 /// The base type for an individual menu item that can be shown in a menu.
@@ -26,12 +26,12 @@ abstract class AbstractMenuItem {
 }
 
 /// A standard menu item, with no submenus.
-class MenuItem extends AbstractMenuItem {
+class MenuItem_1 extends AbstractMenuItem {
   /// Creates a new menu item with the given [label] and options.
   ///
   /// Note that onClicked should generally be set unless [enabled] is false,
   /// or the menu item will be selectable but not do anything.
-  const MenuItem({
+  const MenuItem_1({
     required String label,
     this.shortcut,
     this.enabled = true,

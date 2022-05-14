@@ -169,7 +169,7 @@ class MenuChannel {
       if (item is Submenu) {
         representation[_kChildrenKey] =
             _channelRepresentationForMenu(item.children);
-      } else if (item is MenuItem) {
+      } else if (item is MenuItem_1) {
         final handler = item.onClicked;
         if (handler != null) {
           representation[_kIdKey] = _storeMenuCallback(handler);

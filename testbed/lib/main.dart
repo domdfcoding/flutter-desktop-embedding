@@ -87,7 +87,7 @@ class _AppState extends State<MyApp> {
   void updateMenubar() {
     setApplicationMenu([
       Submenu(label: 'Color', children: [
-        MenuItem(
+        MenuItem_1(
             label: 'Reset',
             enabled: _primaryColor != Colors.blue,
             shortcut: LogicalKeySet(
@@ -97,7 +97,7 @@ class _AppState extends State<MyApp> {
             }),
         MenuDivider(),
         Submenu(label: 'Presets', children: [
-          MenuItem(
+          MenuItem_1(
               label: 'Red',
               enabled: _primaryColor != Colors.red,
               shortcut: LogicalKeySet(LogicalKeyboardKey.meta,
@@ -105,7 +105,7 @@ class _AppState extends State<MyApp> {
               onClicked: () {
                 setPrimaryColor(Colors.red);
               }),
-          MenuItem(
+          MenuItem_1(
               label: 'Green',
               enabled: _primaryColor != Colors.green,
               shortcut: LogicalKeySet(LogicalKeyboardKey.meta,
@@ -113,7 +113,7 @@ class _AppState extends State<MyApp> {
               onClicked: () {
                 setPrimaryColor(Colors.green);
               }),
-          MenuItem(
+          MenuItem_1(
               label: 'Purple',
               enabled: _primaryColor != Colors.deepPurple,
               shortcut: LogicalKeySet(LogicalKeyboardKey.meta,
@@ -124,7 +124,7 @@ class _AppState extends State<MyApp> {
         ])
       ]),
       Submenu(label: 'Counter', children: [
-        MenuItem(
+        MenuItem_1(
             label: 'Reset',
             enabled: _counter != 0,
             shortcut: LogicalKeySet(
@@ -133,11 +133,11 @@ class _AppState extends State<MyApp> {
               _setCounter(0);
             }),
         MenuDivider(),
-        MenuItem(
+        MenuItem_1(
             label: 'Increment',
             shortcut: LogicalKeySet(LogicalKeyboardKey.f2),
             onClicked: incrementCounter),
-        MenuItem(
+        MenuItem_1(
             label: 'Decrement',
             enabled: _counter > 0,
             shortcut: LogicalKeySet(LogicalKeyboardKey.f1),
